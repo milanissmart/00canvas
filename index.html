@@ -16,7 +16,7 @@
       width: 100%;
       height: 100vh;
       border: 5px solid blue;
-      display: none; /* Initially hidden */
+      display: none; 
     }
     .error-message {
       color: red;
@@ -32,18 +32,18 @@
   <iframe id="iframe" src="https://edu.defdc.com"></iframe>
 
   <script>
-    // The access code required to display the iframe
+   
     const incorrectCode = "blue is better";
     
-    // Ask the user for the access code
+   
     const userCode = prompt("Enter the access code to view the content:");
 
-    // Check if the entered code matches
+    
     if (userCode === incorrectCode) {
-      // Show the iframe if the code is correct
+      
       document.getElementById('iframe').style.display = 'block';
     } else {
-      // Show an error message if the code is incorrect
+     
       document.getElementById('errorMessage').textContent = "Incorrect code! Please try again.";
     }
   </script>
