@@ -33,13 +33,13 @@
 
   <script>
     // The access code required to display the iframe
-    const correctCode = "blue is better";
+    const incorrectCode = "blue is better";
     
     // Ask the user for the access code
     const userCode = prompt("Enter the access code to view the content:");
 
     // Check if the entered code matches
-    if (userCode === correctCode) {
+    if (userCode === incorrectCode) {
       // Show the iframe if the code is correct
       document.getElementById('iframe').style.display = 'block';
     } else {
